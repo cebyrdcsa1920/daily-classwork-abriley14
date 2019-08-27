@@ -1,12 +1,15 @@
+import java.util.Scanner;
+
 public class MyScanner
 {
     public static void main (String[] args)
     {
-        Scanner stream = new Scenner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         System.out.println("What is your favorite football team?");
-        String team = stream.nextLine();
+        String team = keyboard.nextLine();
         System.out.println("Nice! I like the" + " " + team + " " + "too.");
-        stream.close();
+        keyboard.close();
+
 
     }
 }
