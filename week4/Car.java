@@ -16,6 +16,26 @@ public class Car
 
     }
 
+    /**
+     * Drives the car the given distance. Subtracts gas from the tank
+     *
+     * @param distance  The distance driven in miles
+     */
+    public void drive(double distance)
+    {
+        amountOfGas -= distance / mpg;
+    }
+
+    /**
+     * Gets the amount of gas in the tank
+     *
+     * @return amount of gas
+     */
+    public double getAmountOfGas()
+    {
+        return amountOfGas;
+    }
+
     public String toString()
     {
         return "This is my Mustang";
